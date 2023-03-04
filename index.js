@@ -29,13 +29,13 @@ function prependCat(name) {
 }
 
 function removeLastCat() {
-    const newArr = cats.slice();
-    newArr.pop();
+    const newArr = cats.slice(0, 2);
+    //newArr.pop();
     return newArr
 }
 
 function removeFirstCat() {
-    const newArr = cats.slice();
-    newArr.shift()
+    const newArr = cats.slice(1);
+    //newArr.shift()
     return newArr
 }
